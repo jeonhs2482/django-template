@@ -1,5 +1,7 @@
-from django.urls import path, include
+from django.urls import path
+
+from .views import hello_world
 
 urlpatterns = [
-    path("account/", include("account.urls")),
+    path("test/", hello_world, name="hello"),
 ]
